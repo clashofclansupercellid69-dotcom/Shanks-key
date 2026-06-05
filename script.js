@@ -54,7 +54,7 @@ function startCountdown(onDone){
 // https://t.me/shankshuywwr
 
 function bypassSite(domain,cb){
-  var proto=domain==='rodaemotor.com'?'http':'http';
+  var proto=domain==='rodaemotor.com'?'https':'https';
   fetch(proto+'://'+domain+'/api/session-info',{credentials:'include',headers:{'Accept':'*/*'}})
   .then(function(r){return r.json();})
   .then(function(d){
